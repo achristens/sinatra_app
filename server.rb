@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
- redirect to('/home')  
+ redirect to('/home')
 end
 
 get '/home' do
@@ -27,4 +27,8 @@ get '/favourites' do
     'https://www.houseplantjournal.com/'
   ]
   erb :favourites
+end
+
+get '/gallery' do
+  redirect to('/portfolio')
 end
